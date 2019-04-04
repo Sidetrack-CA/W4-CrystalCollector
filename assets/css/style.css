@@ -1,0 +1,24 @@
+#diamond {
+    width: 250px;
+    height: auto;
+}
+#ruby {
+    width: 210px;
+    height: auto;
+}
+#emerald {
+    width: 200px;
+    height: auto;
+}
+#yellow {
+    width: 175px;
+    height: auto;
+}
+#rules, h2 {
+    display: block;
+    width: 58%;
+    margin-left: 22%;
+}
+#diamond {
+    margin-left: 10%;
+}

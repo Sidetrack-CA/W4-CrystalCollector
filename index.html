@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <audio id=loseSound src="assets/Sounds/lose.mp3" preload="auto"></audio>
+    <audio id=winSound src="assets/Sounds/win.mp3" preload="auto"></audio>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Jewell Guesser!</h1>
+            <p>The number guessing game for the super intellectual individual.</p>
+        </div>
+    </div>
+
+    <h2>Rules of the Game</h2>
+    <p id=rules>The game begins with the computer assigning a random number as a target score. Your job is to be the jewel
+        guesser and try to match the computers target score. Go over the target score and you lose! You will accomplish
+        this by clicking on the jewels which hold each hold a different number. There is a catch. The jewels will each
+        hold a random number that will be hidden from you. Your choice in which jewell you pick will determine your fate
+        as the jewell checker!</p>
+    <br>
+    <div class="row, container">
+        <h3 class="col-md-3"></h3>
+        <h3 class="col-md-3">Target Score:
+            <span id='targetScore'>0</span>
+        </h3>
+        <h3 class="col-md-3 ">Your Score:
+            <span id='myScore'>0</span>
+        </h3>
+        <h3 class="col-md-3 ">Wins:
+            <span id='myWins'>0</span>
+        </h3>
+        <h3 class="col-md-3 ">Losses:
+            <span id='myLosses'>0</span>
+        </h3>
+
+        <br>
+
+        <div class="jewels">
+            <img src="assets/images/1.png" id="diamond" class="jewelImg">
+            <img src="assets/images/2.jpg" id="ruby" class="jewelImg">
+            <img src="assets/images/3.jpg" id="emerald" class="jewelImg">
+            <img src="assets/images/4.png" id="yellow" class="jewelImg">
+        </div>
+
+
+        <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
